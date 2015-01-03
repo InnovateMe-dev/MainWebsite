@@ -49,6 +49,7 @@ $education = $row['education'];
 <head>
     <title><?php echo "$firstname $lastname"; ?></title>
     
+    <link rel="shortcut icon" href="./img/icon.ico">
     <link rel="stylesheet" href="profiletest.php" media="screen">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
     
@@ -81,7 +82,7 @@ $education = $row['education'];
         
          <nav class="header-nav">
 	<ul>
-		<li><a href="#">Home</a></li>
+		<li><a href="index.html">Home</a></li>
                 
 		<li><a href="#">Workspace</a>
 			<ul>
