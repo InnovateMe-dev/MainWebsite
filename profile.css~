@@ -1,0 +1,121 @@
+*{
+margin:0;
+padding:0;
+}
+
+html { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+}
+
+body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0; 
+	background-color:#06a8f0; 
+	font-family:FreeSans;
+}
+
+h1 {
+	color: #000000;
+	font-family:FreeSans;
+	font-size: 40pt;
+}
+
+.logosize {
+	height: 95%;
+	width: auto;	
+	position: relative;
+	text-align: left;
+	margin-left: 5px;
+}
+
+#main {
+	height: 100%;
+	width: 100%;
+	margin: 0; 
+	padding: 0; 
+}
+
+#profile {
+	height: 100%;
+	margin: 0; 
+	padding: 0; 
+	background-color: #ffffff;
+	color: #000000;
+	width: 80%;
+	float: left;
+}
+
+#infopane {
+	
+	text-align: center;
+	color: white;
+	height:100%;
+	padding: 0;
+	margin: 0;	
+	width: 20%;
+	float: left;
+	background-color: #000000;
+}
+
+#info {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin:5%;
+	text-align: left;
+	font-size: 14pt;
+	
+}
+
+#profilepic {
+	position: relative;
+	text-align: center;
+	width: 80%;
+	height: auto;
+	margin: 5%;
+}
+
+.about {
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 16pt;
+	color: black;
+}
+
+.center {
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header { 
+	font-family:FreeSans;
+	height: 60px; 
+	background-color: #393939; 
+	color: white;
+}
+
+footer { 
+	font-family:FreeSans;
+	height: 10%; 
+	background-color: #393939; 
+	color: white;
+}
+
+
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}

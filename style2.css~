@@ -1,0 +1,171 @@
+*{
+margin:0;
+padding:0;
+}
+
+html { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+}
+
+body { 
+	height:100%;
+	margin: 0; 
+	padding: 0; 
+	background-color:#06a8f0; 
+}
+
+#Sign-Up {
+	padding-top: 10%;
+	position: relative;
+	color: white; 
+	text-align: center; 
+	font-family:FreeSans;
+	padding-bottom:60px;
+}
+
+#Login {
+	padding-top: 10%;
+	position: relative;
+	color: white; 
+	text-align: center; 
+	font-family:FreeSans;
+	padding-bottom:60px;
+}
+
+#centerlogin {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	color: white; 
+	text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.center {
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+}
+
+.logosize2 {
+	height: 95%;
+	width: auto;	
+	position: relative;
+	text-align: left;
+	margin-left: 5px;
+}
+
+header { 
+	font-family:FreeSans;
+	height: 60px; 
+	background-color: #393939; 
+	color: white;
+}
+
+footer { 
+	position: absolute;
+	width: 100%;
+	font-family:FreeSans;
+	height: 60px; 
+	background-color: #393939; 
+	color: white;
+	bottom: 0;
+}
+
+#login2 {
+	color: white; 
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center; 
+	font-family:FreeSans;
+	font-size: 52px;
+}
+
+#signuph1 {
+	color: white; 
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center; 
+	font-family:FreeSans;
+	font-size: 52px;
+}
+
+.center2 {
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+.textinput {
+	font-family:FreeSans;
+	font-size: 42px;
+	width: 6em;
+	height: 1.5em;
+}
+
+.signupinput {
+	font-family:FreeSans;
+	font-size: 30px;
+	width: 11em;
+	height: 1.5em;
+}
+
+#button1 {
+	border: none;
+	overflow: hidden;
+	position: relative;
+	display: inline-block; width: 100px; height: 50px;
+	background:url(loginbutton.png) no-repeat;
+}
+
+#button1:hover {
+	cursor: pointer;
+	border: none;
+	overflow: hidden;
+	position: relative;
+	display: inline-block; width: 100px; height: 50px;
+	background:url(loginbuttonclicked.png) no-repeat;
+}
+
+#button2 {
+	border: none;
+	overflow: hidden;
+	position: relative;
+	display: inline-block; width: 100px; height: 50px;
+	background:url(signupbutton.png) no-repeat;
+}
+
+#button2:hover {
+	cursor: pointer;
+	border: none;
+	overflow: hidden;
+	position: relative;
+	display: inline-block; width: 100px; height: 50px;
+	background:url(signupbuttonclicked.png) no-repeat;
+}

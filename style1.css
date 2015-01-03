@@ -1,0 +1,186 @@
+*{
+margin:0;
+padding:0;
+}
+
+html { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+}
+
+body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0; 
+	background-color:#06a8f0; 
+}
+
+@font-face {
+	font-family: 'simplifica';
+	src: 
+		url('SIMPLIFICATypeface.ttf') 
+		format('truetype');	
+}
+
+h1 {
+	font-family:FreeSans;
+	font-size: 40pt;
+}
+
+#wrapper { 
+	height: 100%; 
+}
+
+footer { 
+	font-family:FreeSans;
+	height: 60px; 
+	background-color: #393939; 
+	color: white;
+}
+
+header { 
+	font-family:FreeSans;
+	height: 60px; 
+	background-color: #393939; 
+	color: white;
+}
+
+#logo {
+	margin-top: 80px;
+	position: relative;
+	text-align: center;
+}
+
+.logosize2 {
+	height: 95%;
+	width: auto;	
+	position: relative;
+	text-align: left;
+	margin-left: 5px;
+}
+
+.logosize {
+	height: auto;
+	width: auto;
+}
+
+#title {
+	text-align: center;
+	position: relative;
+	margin-top: 10px;
+}
+
+.text {
+	color: white; 
+	text-align: center; 
+	font-family:FreeSans;
+	font-size: 14pt;
+}
+
+.text2 {
+	font-weight: bold;
+	color: white; 
+	text-align: center; 
+	font-family:FreeSans;
+	font-size: 18pt;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+#Sign-Up {
+	color: white; 
+	text-align: center; 
+	font-family:FreeSans;
+}
+
+
+#button1 {
+	position: relative;
+	display: inline-block; width: 100px; height: 50px;
+	background:url(loginbutton.png) no-repeat;
+}
+#button1:hover {
+	cursor: pointer;
+	position: relative;
+	display: inline-block; width: 100px; height: 50px;
+	background:url(loginbuttonclicked.png) no-repeat;
+}
+
+#button2 {
+	position: relative;
+	display: inline-block; width: 100px; height: 50px;
+	background:url(signupbutton.png) no-repeat;
+}
+#button2:hover {
+	cursor: pointer;
+	position: relative;
+	display: inline-block; width: 100px; height: 50px;
+	background:url(signupbuttonclicked.png) no-repeat;
+}
+
+.center {
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.par {
+	background-color: #ffffff;
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30%;
+	color: black;
+	font-size: 40pt;
+	font-family:FreeSans;
+	font-weight: bold;
+}
+
+.par2 {
+	background-color: #ffffff;
+	position: relative;
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 5%;
+	color: black;
+	font-size: 23pt;
+ 	line-height: 2em;
+	font-family:'FreeSans';
+}
+
+#about {
+	background-color: #ffffff;
+}
+
+.nav {
+	height: 100%;
+	position: relative;
+	margin-top: 18px;
+	float: right;
+	font-family:FreeSans;
+	padding-right: 5%;
+	font-size: 18pt;
+}
+
