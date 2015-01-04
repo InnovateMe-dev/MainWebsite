@@ -82,9 +82,9 @@ $education = $row['education'];
         
          <nav class="header-nav">
 	<ul>
-		<li><a href="index.html">Home</a></li>
+		<li><a href="index.html"><img src="./img/icon1.png" title="Home"></a></li> <!--home-->
                 
-		<li><a href="#">Workspace</a>
+		<li><a href="#"><img src="./img/icon3.png" title="Workspace"></a> <!--workspace-->
 			<ul>
 				<li><a href="#">Browser IDE</a></li>
 				<li><a href="#">Mind Mapping</a></li>
@@ -96,14 +96,14 @@ $education = $row['education'];
 				</li>
 			</ul>
 		</li>
-		<li><a href="#">Projects</a>
+		<li><a href="#"><img src="./img/icon2.png" title="Projects"></a> <!-- projects -->
 			<ul>
 				<li><a href="#">Commits</a></li>
 				<li><a href="#">Teams</a></li>
                                 <li><a href="#">Tasks</a></li>
 			</ul>
 		</li>
-		<li><a href="#">Network</a></li>
+		<li><a href="#"><img src="./img/icon4.png" title="Network"></a></li> <!--networking -->
 	</ul>
 </nav>
         
