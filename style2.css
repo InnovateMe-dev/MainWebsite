@@ -140,6 +140,13 @@ footer {
 	height: 1.5em;
 }
 
+.signupinput2 {
+	font-family:FreeSans;
+	font-size: 20px;
+	width: 332px;
+	
+}
+
 #button1 {
 	border: none;
 	overflow: hidden;

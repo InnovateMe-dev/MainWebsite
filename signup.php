@@ -27,11 +27,17 @@ if(!empty($_POST['username']))   //checking the 'user' name which is from Sign-U
 function NewUser()
 {
 
-	$name = $_POST['name'];
+	$firstname = $_POST['firstname'];
 	$username = $_POST['username'];
 	$email = $_POST['email'];
 	$password =  $_POST['password'];
-	$query = "INSERT INTO users (username,name,email,password) VALUES ('$username','$name','$email','$password')";
+	$lastname = $_POST['lastname'];
+	$city = $_POST['city'];
+	$about = $_POST['about']; //escape the html characters later
+	$profession = $_POST['profession'];
+	$education = $_POST['education'];
+	
+	$query = "INSERT INTO users (username,password,email,firstname,lastname,city,profession,education,about) VALUES ('$username','$password','$email','$firstname','$lastname','$city','$profession','$education','$about')";
 	$data = mysql_query($query)or die("Error: " . mysql_error());
 	if($data)
 	{

@@ -42,6 +42,8 @@ header {
    
 }
 
+
+
 .logosize {
 	height: 95%;
 	width: auto;	
@@ -70,6 +72,12 @@ header {
     overflow-y: visible;
   
     
+}
+
+.header-nav img {
+    margin-top: 2px;
+    max-height: 30px;
+    max-width: auto;
 }
 
 .header-nav ul ul {
@@ -115,9 +123,9 @@ header {
 	.header-nav ul li a {
                 border-left: 0px solid #6b727c;
 		border-right: 0px solid #575f6a;
-                margin: 0px 0px;
+                margin: 3px 0px 2px;
 		display: block;
-                padding: 10px 20px;
+                padding: 0px 20px;
 		color: #06a8f0;
                 text-decoration: none;
                 font-weight: bold;
@@ -149,7 +157,7 @@ header {
 
 
 .header-nav ul ul ul {
-	position: absolute; left: 100%; top:0;
+	position: absolute; right: 100%; top:0;
 }
 
 #banner {
