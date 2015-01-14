@@ -28,7 +28,7 @@ $count=mysql_num_rows($result);
 
 //assign userid as session variable
 $row = mysql_fetch_assoc($result);
-$userid = $row['userid'];
+$user_id = $row['user_id'];
 $name = $name['name'];
 
 // If result matched $myusername and $mypassword, table row must be 1 row
@@ -38,7 +38,7 @@ if($count==1){
 session_start();
 $_SESSION['myusername'] = $myusername;
 $_SESSION['mypassword'] = $mypassword;
-$_SESSION['userid'] = $userid;
+$_SESSION['user_id'] = $user_id;
 $_SESSION['name'] = $name;
 
 header("location:login_success.php");

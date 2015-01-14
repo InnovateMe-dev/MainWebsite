@@ -7,9 +7,7 @@
 <body>
 <div id="wrapper">
 
-<header>
-	<a href="index.html"><img src="logolong.png" alt="InnovateMe" class="logosize2" ></a>	
-</header>
+<?php include './includes/header_include.php';?>
 
 <div id="Login">
 <br>

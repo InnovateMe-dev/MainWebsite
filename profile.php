@@ -12,7 +12,7 @@ $host="localhost"; // Host name
 $username="root"; // Mysql username
 $password="79512499"; // Mysql password
 $db_name="innovateme"; // Database name
-$tbl_name="userprofile"; // Table name
+$tbl_name="users"; // Table name
 
 /*
 mysql_connect("$host", "$username", "$password")or die("cannot connect");
@@ -82,7 +82,7 @@ $education = $row['education'];
         
          <nav class="header-nav">
 	<ul>
-		<li><a href="index.html"><img src="./img/icon1.png" title="Home"></a></li> <!--home-->
+		<li><a href="index.php"><img src="./img/icon1.png" title="Home"></a></li> <!--home-->
                 
 		<li><a href="#"><img src="./img/icon3.png" title="Workspace"></a> <!--workspace-->
 			<ul>
@@ -126,16 +126,9 @@ $education = $row['education'];
     
     <div id="container-main">
         <aside id="left-column">
-            Project 1<br>
+            <h2>Friends</h2>
             
-            <select>
-                <option value="Project1">Project 1</option>
-                <option value="Project2">Project 2</option>
-                <option value="Project3">Project 3</option>
-                <option value="Project4">Project 4</option>
-            </select>
-            <br>About Me<br>
-	    <?php echo "$about"?>
+	   <?php include './includes/friendsDisplay.php';?>
             
         </aside>
         

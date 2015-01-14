@@ -203,7 +203,8 @@ header {
 
 #name-holder {
     text-align: center;
-    width: 200px;
+    max-width: 300px;
+    min-width: 200px;
     margin-top: 30px;
     height: 1ep;
     background-color: white;
@@ -230,7 +231,7 @@ header {
     display: inline;
     float: left;
     width: 20%;
-    
+    text-align: center;
     background-color: white;
     height: 100%;
     position: relative;
