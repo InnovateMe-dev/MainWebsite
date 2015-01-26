@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	
+  	<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
 <title>InnovateMe</title>
 
 <link rel="stylesheet" type="text/css" href="style1.css">
@@ -9,8 +13,11 @@
 
 <body>
 <a name="top"></a>
-<div id="wrapper">
+
 <?php include './includes/header_include.php';?>
+
+<div id="wrapper">
+	
 
 
 <div id="logo">

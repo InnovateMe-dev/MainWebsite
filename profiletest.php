@@ -313,6 +313,14 @@ nav {
 	color: #fff; 
 	background-color: #393939;
 	}
+	
+#navbar ul li a.selected {
+    color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
+    
+    div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; }
+    
+    div.tabContent.hide { display: none; }
+
 
 footer {
     text-align: center;

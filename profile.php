@@ -7,7 +7,7 @@ header ("Location: login.php");
 
 $myusername = $_SESSION['myusername'];
 $mypassword = $_SESSION['mypassword'];
-$userid = $_SESSION['userid'];
+$user_id = $_SESSION['user_id'];
 $host="localhost"; // Host name
 $username="root"; // Mysql username
 $password="79512499"; // Mysql password
@@ -25,13 +25,13 @@ $result=mysql_query($sql);
 mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
 
-$sql="SELECT * FROM $tbl_name WHERE userid='$userid'";
+$sql="SELECT * FROM $tbl_name WHERE user_id='$user_id'";
 $result=mysql_query($sql);
 
 $row = mysql_fetch_assoc($result);
 
-$firstname = $row['firstname'];
-$lastname = $row['lastname'];
+$firstname = $row['first_name'];
+$lastname = $row['last_name'];
 $email = $row['email'];
 $city = $row['city'];
 $about = $row['about'];
@@ -47,6 +47,11 @@ $education = $row['education'];
 
 <html>
 <head>
+	
+	<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
     <title><?php echo "$firstname $lastname"; ?></title>
     
     <link rel="shortcut icon" href="./img/icon.ico">
@@ -68,13 +73,16 @@ $education = $row['education'];
 </script>
 <link rel="stylesheet" href="search.css" type="text/css" />
        
-        
+<script src="tabs.js"></script>
 </head>
 
-<body>
+<body onload="init()">
 <div id="container">
-    <header>
-        <a href="index.html"><img src="logolong.png" alt="InnovateMe" class="logosize" ></a>
+	
+	<?php include './includes/header_include.php';?>
+
+    <!--<header>
+        <a href="index.html"><img src="logolong.png" alt="InnovateMe" class="logosize"></a>
         
         <div id="search">
             <div id="cse-search-form" style="width: 100%;">Loading</div>
@@ -82,9 +90,9 @@ $education = $row['education'];
         
          <nav class="header-nav">
 	<ul>
-		<li><a href="index.php"><img src="./img/icon1.png" title="Home"></a></li> <!--home-->
+		<li><a href="index.php"><img src="./img/icon1.png" title="Home"></a></li> <!--home--
                 
-		<li><a href="#"><img src="./img/icon3.png" title="Workspace"></a> <!--workspace-->
+		<li><a href="#"><img src="./img/icon3.png" title="Workspace"></a> <!--workspace--
 			<ul>
 				<li><a href="#">Browser IDE</a></li>
 				<li><a href="#">Mind Mapping</a></li>
@@ -96,19 +104,19 @@ $education = $row['education'];
 				</li>
 			</ul>
 		</li>
-		<li><a href="#"><img src="./img/icon2.png" title="Projects"></a> <!-- projects -->
+		<li><a href="#"><img src="./img/icon2.png" title="Projects"></a> <!-- projects --
 			<ul>
 				<li><a href="#">Commits</a></li>
 				<li><a href="#">Teams</a></li>
                                 <li><a href="#">Tasks</a></li>
 			</ul>
 		</li>
-		<li><a href="#"><img src="./img/icon4.png" title="Network"></a></li> <!--networking -->
+		<li><a href="#"><img src="./img/icon4.png" title="Network"></a></li> <!--networking --
 	</ul>
 </nav>
         
         
-    </header>
+    </header>-->
 
     <div id="banner">
         <div id="profile-picture">
@@ -149,6 +157,7 @@ $education = $row['education'];
             <article>
                 <?php echo "Email: $email <br>City: $city<br>Profession: $profession<br>Education: $education<br>";?>
 		<?php echo "$myusername $mypassword";?>
+		<?php print_r($row);?>
             </article>     
         </section>
                

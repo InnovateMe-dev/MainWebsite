@@ -5,9 +5,10 @@
 </head>
 
 <body>
+<?php include './includes/header_include.php';?>	
 <div id="wrapper">
 
-<?php include './includes/header_include.php';?>
+
 
 <div id="Login">
 <br>
