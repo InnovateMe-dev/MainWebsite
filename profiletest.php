@@ -165,8 +165,9 @@ header {
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    padding-top: 50px;
     width: 100%;
-    height: 300px;
+    height: 350px;
     
     border-bottom: solid;
     border-width: 5px;

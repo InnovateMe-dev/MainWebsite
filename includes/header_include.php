@@ -79,15 +79,16 @@ $lastname = $row['last_name'];
 							echo '<a href="login.php">Login</a>';	
 						 } else { 
 							echo "$firstname $lastname";					
-						 }	   
+					
+						echo '<ul class="dropdown">';
+						echo '	<li><a href="index.php"><i class="icon-home"></i>Home</a></li>';
+						echo '	<li><a href="profile.php"><i class="icon-user"></i>Profile</a></li>'	;						
+						echo '	<li><a href="#"><i class="icon-th-large"></i>My Network</a></li>';
+						echo '	<li><a href="#"><i class="icon-cog"></i>Settings</a></li>';
+						echo '	<li><a href="logout.php"><i class="icon-remove"></i>Log out</a></li>';
+						echo '</ul>';
+						}	   
 					  ?>
-						<ul class="dropdown">
-							<li><a href="index.php"><i class="icon-home"></i>Home</a></li>
-							<li><a href="profile.php"><i class="icon-user"></i>Profile</a></li>							
-							<li><a href="#"><i class="icon-th-large"></i>My Network</a></li>
-							<li><a href="#"><i class="icon-cog"></i>Settings</a></li>
-							<li><a href="logout.php"><i class="icon-remove"></i>Log out</a></li>
-						</ul>
 					</div>
 				​</div>
 			

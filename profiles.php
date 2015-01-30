@@ -46,8 +46,6 @@ $premium = $row['premium'];
 
 
 
-
-
 ?>
 
 <!DOCTYPE html>
