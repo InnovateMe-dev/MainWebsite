@@ -1,35 +1,31 @@
 <?php
-
 session_start();
 if (!(isset($_SESSION['myusername']) && $_SESSION['myusername'] != '') && !(isset($_SESSION['mypassword']) && $_SESSION['mypassword'] != '')) {
 header ("Location: login.php");
 }
-
 $myusername = $_SESSION['myusername'];
 $mypassword = $_SESSION['mypassword'];
-$user_id = $_SESSION['user_id'];
+
+
+$user_id = $_GET["user_id"]; //get userid from get request
+
+//$user_id = $_SESSION['user_id'];
 $host="localhost"; // Host name
 $username="root"; // Mysql username
 $password="79512499"; // Mysql password
 $db_name="innovateme"; // Database name
 $tbl_name="users"; // Table name
-
 /*
 mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
-
 $sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
 $result=mysql_query($sql);
 */
-
 mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
-
 $sql="SELECT * FROM $tbl_name WHERE user_id='$user_id'";
 $result=mysql_query($sql);
-
 $row = mysql_fetch_assoc($result);
-
 $email = $row['email'];
 $firstname = $row['first_name'];
 $lastname = $row['last_name'];
@@ -43,9 +39,6 @@ $education = $row['education'];
 $personal_statement = $row['personal_statement'];
 $date_signed_up = $row['date_signed_up'];
 $premium = $row['premium'];
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -69,7 +62,6 @@ $premium = $row['premium'];
   google.setOnLoadCallback(function() {
     var customSearchControl = new google.search.CustomSearchControl(
       '008542627573812080491:6fjizbozdlu');
-
     customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
     var options = new google.search.DrawOptions();
     options.enableSearchboxOnly("http://www.google.com/cse?cx=007892779704213323984:cmsvc6a4st8", null, true);
