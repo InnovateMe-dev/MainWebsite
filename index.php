@@ -36,7 +36,7 @@
 
 <a href="#about"><p class="text2">Who We Are</p></a>
 
-<link href="//my.betali.st/widget/35zov736k.css" rel="stylesheet" /> <script src="//my.betali.st/widget/35zov736k.js" id="MyBetaList"></script>
+<!--link href="//my.betali.st/widget/35zov736k.css" rel="stylesheet" /> <script src="//my.betali.st/widget/35zov736k.js" id="MyBetaList"></script-->
 
 </p>
 
