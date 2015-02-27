@@ -48,7 +48,19 @@
 Who We Are<br>
 </div>
 <p class="par2">
+<!--	
+<h3>Networking for the new and old</h3>
+More then just a Social Network, we're a network of both people and ideas. Connect with your fellow entrepreneurs, both those you know in real life, and those you would like to get to know. With InnovateMe being the leading Social Network for Startups worldwide, you're sure to find people just as awesome as you are.
 
+<h3>Bringing your ideas to life</h3>
+InnovateMe connects you with the people you need to make it happen. Sometimes a good business partner is key, other times maybe its a mentor. Whoever you need, we'll connect you with them.
+
+<h3>Profiles</h3>
+Individual profiles for you, your startup, and your ideas, allow you to have control over the exposure you need, allowing you to be exactly where you want to be on the network.
+
+<h3>Privacy</h3>
+Because privacy means as much to us as it does to you, we will never share your personal information with any third party. With privacy settings laid out in a simple way so that they are easy to understand, you'll always know exactly how much of your profile is public.
+-->
 
 Everybody has had an idea at some point, an idea for a product, a service perhaps. These ideas are often quickly dismissed, usually because the individual lacks the connections or assistance to make the idea happen.
 Now, that is no longer the case.<br>
@@ -63,6 +75,7 @@ We all have a small piece of a puzzle, something that may seem small, but withou
 
 <br><b>Together, we can all build the future, one idea at a time.</b><br>
 <a href="#top">-Go back up-</a>
+
 </p>
 
 
