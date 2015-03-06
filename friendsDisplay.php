@@ -38,7 +38,7 @@ $sql2="SELECT * FROM $tbl_name2 WHERE user_id IN ($user_idArrayVar);";
 $result2=mysql_query($sql2);
 $row2 = mysql_fetch_array($result2);
     $summary2 = $row2['first_name'];
-  echo '<a href="profiles.php?user_id='.$user_idArrayVar.'>' . $summary2 . '</a><br>';
+  echo '<a href="profiles.php?user_id=' . $user_idArrayVar . '">' . $summary2 . '</a><br>';
   $x = $x + 1;
 //print_r($summary2);
 }

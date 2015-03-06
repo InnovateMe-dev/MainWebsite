@@ -7,7 +7,7 @@ $myusername = $_SESSION['myusername'];
 $mypassword = $_SESSION['mypassword'];
 
 
-$user_id = $_GET["user_id"]; //get userid from get request
+$user_id = htmlspecialchars($_GET["user_id"]); //get userid from get request
 
 //$user_id = $_SESSION['user_id'];
 $host="localhost"; // Host name
