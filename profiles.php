@@ -15,12 +15,14 @@ $username="root"; // Mysql username
 $password="79512499"; // Mysql password
 $db_name="innovateme"; // Database name
 $tbl_name="users"; // Table name
+
 /*
 mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
 $sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
 $result=mysql_query($sql);
 */
+
 mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
 $sql="SELECT * FROM $tbl_name WHERE user_id='$user_id'";
@@ -154,6 +156,7 @@ $premium = $row['premium'];
             <article>
                 <?php echo "Email: $email <br>City: $city<br>Profession: $profession<br>Education: $education<br>";?>
 		<?php echo "$myusername $mypassword";?>
+		<?php echo "$firstname $lastname";?>
 		<?php print_r($row);?>
             </article>     
         </section>
@@ -165,7 +168,7 @@ $premium = $row['premium'];
     
 <footer>
            <div id="site-footer">
-            (c) 2014 InnovateMe Inc. All rights reserved.
+            (c) 2014 InnovateMe Inc. All rights reserved. TEST
             
            </div>
 </footer> 
