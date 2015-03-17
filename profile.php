@@ -1,5 +1,7 @@
 <?php
 
+php -S localhost:8000;
+
 session_start();
 if (!(isset($_SESSION['myusername']) && $_SESSION['myusername'] != '') && !(isset($_SESSION['mypassword']) && $_SESSION['mypassword'] != '')) {
 header ("Location: login.php");
@@ -54,19 +56,19 @@ $premium = $row['premium'];
 
 <html>
 <head>
-	
+
 	<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			
+
     <title><?php echo "$firstname $lastname"; ?></title>
-    
+
     <link rel="shortcut icon" href="./img/icon.ico">
     <link rel="stylesheet" href="profiletest.php" media="screen">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
-    
+
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript"> 
+<script type="text/javascript">
   google.load('search', '1', {language : 'en'});
   google.setOnLoadCallback(function() {
     var customSearchControl = new google.search.CustomSearchControl(
@@ -79,26 +81,26 @@ $premium = $row['premium'];
   }, true);
 </script>
 <link rel="stylesheet" href="search.css" type="text/css" />
-       
+
 <script src="tabs.js"></script>
 </head>
 
 <body onload="init()">
 <div id="container">
-	
+
 	<?php include './includes/header_include.php';?>
 
     <!--<header>
         <a href="index.html"><img src="logolong.png" alt="InnovateMe" class="logosize"></a>
-        
+
         <div id="search">
             <div id="cse-search-form" style="width: 100%;">Loading</div>
         </div>
-        
+
          <nav class="header-nav">
 	<ul>
 		<li><a href="index.php"><img src="./img/icon1.png" title="Home"></a></li> <!--home--
-                
+
 		<li><a href="#"><img src="./img/icon3.png" title="Workspace"></a> <!--workspace--
 			<ul>
 				<li><a href="#">Browser IDE</a></li>
@@ -121,65 +123,65 @@ $premium = $row['premium'];
 		<li><a href="#"><img src="./img/icon4.png" title="Network"></a></li> <!--networking --
 	</ul>
 </nav>
-        
-        
+
+
     </header>-->
 
     <div id="banner">
         <div id="profile-picture">
 
            <img src="defaultprofilepic.gif" />
-           
-           
-           
+
+
+
         </div>
-        
+
         <div id="name-holder">
             <?php echo "$firstname $lastname"; ?>
            </div>
     </div>
-    
+
     <div id="container-main">
         <aside id="left-column">
             <h2>Friends</h2>
-            
+
 	   <?php include './includes/friendsDisplay.php';?>
-            
+
         </aside>
-        
+
         <section>
             <nav>
-             <div id="navbar"> 
-                 <ul> 
+             <div id="navbar">
+                 <ul>
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Network</a></li> 
-                    <li><a href="#">Projects</a></li> 
-                    <li><a href="#">Teams</a></li> 
-                    
-                    
+                    <li><a href="#">Network</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Teams</a></li>
+
+
                  </ul>
              </div>
             </nav>
-         
+
             <article>
                 <?php echo "Email: $email <br>City: $city<br>Profession: $profession<br>Education: $education<br>";?>
 		<?php echo "$myusername $mypassword";?>
 		<?php print_r($row);?>
-            </article>     
+            </article>
         </section>
-               
-        
+
+
     </div>
-    
-    
-    
+
+
+
 <footer>
            <div id="site-footer">
             (c) 2014 InnovateMe Inc. All rights reserved.
-            
+
            </div>
-</footer> 
-    
+</footer>
+
 </div>
 
 </body>
