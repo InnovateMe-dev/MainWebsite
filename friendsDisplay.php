@@ -39,7 +39,9 @@ $result2=mysql_query($sql2);
 $row2 = mysql_fetch_array($result2);
     $summary2 = $row2['first_name'];
   echo '<a href="profiles.php?user_id=' . $user_idArrayVar . '">' . $summary2 . '</a><br>';
-  $x = $x + 1;
+echo '<a href="#">Test</a><br>';  
+$x = $x + 1;
+//echo "test";
 //print_r($summary2);
 }
 

@@ -3,24 +3,24 @@ margin:0;
 padding:0;
 }
 
-html { 
-	height: 100%; 
-	margin: 0; 
+html {
+	height: 100%;
+	margin: 0;
 	padding: 0;
 }
 
-body { 
-	height: 100%; 
-	margin: 0; 
-	padding: 0; 
-	background-color:#06a8f0; 
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color:#06a8f0;
 }
 
 @font-face {
 	font-family: 'simplifica';
-	src: 
-		url('SIMPLIFICATypeface.ttf') 
-		format('truetype');	
+	src:
+		url('SIMPLIFICATypeface.ttf')
+		format('truetype');
 }
 
 h1 {
@@ -28,28 +28,28 @@ h1 {
 	font-size: 40pt;
 }
 
-#wrapper { 
-	height: 100%; 
+#wrapper {
+	height: 100%;
 }
 
-footer { 
+footer {
 	font-family:FreeSans;
-	height: 60px; 
-	background-color: #393939; 
+	height: 60px;
+	background-color: #393939;
 	color: white;
 }
 
 
 
 #logo {
-	margin-top: 80px;
+	margin-top: 0px;
 	position: relative;
 	text-align: center;
 }
 
 .logosize2 {
 	height: 95%;
-	width: auto;	
+	width: auto;
 	position: relative;
 	text-align: left;
 	margin-left: 5px;
@@ -63,20 +63,20 @@ footer {
 #title {
 	text-align: center;
 	position: relative;
-	margin-top: 10px;
+	margin-bottom: 0;
 }
 
 .text {
-	color: white; 
-	text-align: center; 
+	color: white;
+	text-align: center;
 	font-family:FreeSans;
-	font-size: 14pt;
+	font-size: 1pt;
 }
 
 .text2 {
 	font-weight: bold;
-	color: white; 
-	text-align: center; 
+	color: white;
+	text-align: center;
 	font-family:FreeSans;
 	font-size: 18pt;
 }
@@ -102,14 +102,15 @@ a:active {
 
 
 #Sign-Up {
-	color: white; 
-	text-align: center; 
+	color: white;
+	text-align: center;
 	font-family:FreeSans;
 }
 
 
 #button1 {
 	position: relative;
+	margin-right: 5px;
 	display: inline-block; width: 100px; height: 50px;
 	background:url(loginbutton.png) no-repeat;
 }
@@ -122,6 +123,7 @@ a:active {
 
 #button2 {
 	position: relative;
+	margin-left: 5px;
 	display: inline-block; width: 100px; height: 50px;
 	background:url(signupbutton.png) no-repeat;
 }
@@ -178,4 +180,3 @@ a:active {
 	padding-right: 5%;
 	font-size: 18pt;
 }
-

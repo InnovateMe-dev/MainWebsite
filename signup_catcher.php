@@ -43,11 +43,16 @@ function NewUser()
 	//echo "YOUR REGISTRATION IS COMPLETED...";
 	header ("Location: profile.php");
 	}
-	}
+}
+
+function CatchPost() {
+
+    
 
 
 
 
 
+}
 
 ?>
